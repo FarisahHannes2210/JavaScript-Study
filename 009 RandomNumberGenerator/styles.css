@@ -1,0 +1,28 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+
+#box_container{
+    background-color: rgb(146, 124, 96);
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px 25px;
+    width: 50%; /* Adjust width to be a percentage */
+    max-width: 400px; /* Prevents it from becoming too big */
+    min-width: 250px; /* Prevents it from becoming too small */
+    margin: auto; /* Centers it */
+}
+
+#labelNum{
+    font-size: 5em;
+    font-weight: bold;
+
+}
+
+#random_btn{
+    font-size: 1em;
+    padding: 5px 25px;
+    border-radius: 10px;
+}
