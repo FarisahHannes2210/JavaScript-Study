@@ -19,16 +19,27 @@ class Animal{
 class Rabbit extends Animal{
     name = "rabbit";
     alive = true;
+
+    run(){
+        console.log(`This ${this.name} is running.`);
+    }
 }
 
 class Fish extends Animal{
     name = "fish";
     alive = false;
+
+    swim(){
+        console.log(`This ${this.name} is swimming.`);
+    }
 }
 
 class Hawk extends Animal{
     name = "hawk";
     alive = true;
+    fly(){
+        console.log(`This ${this.name} is flying.`);
+    }
 }
 
 const rabbit = new Rabbit();
@@ -40,3 +51,6 @@ rabbit.eat();
 fish.sleep();
 
 console.log(fish.alive);
+rabbit.run();
+fish.swim();
+hawk.fly();
