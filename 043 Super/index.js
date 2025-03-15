@@ -3,6 +3,7 @@
 // methods of a parent (superclass)
 //      this =  this object
 //      super = the parent
+// easy to user repeatable code but some of it have catergories.
 
 class Animal {
   constructor(name, age) {
