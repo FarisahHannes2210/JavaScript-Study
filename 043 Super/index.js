@@ -104,4 +104,11 @@ console.log(`Admin Dept [
             Salary: $${admin1.salary.toFixed(2)}
             Admin Skill: ${admin1.adminSkill}]`);
 
+console.log(`Programming Dept [
+              Employee Id: ${programmer1.employeeId}
+              Name: ${programmer1.name}
+              Employee Type: ${programmer1.employeeType}
+              Salary: $${programmer1.salary.toFixed(2)}
+              Programming Language: ${programmer1.programmingLang}]`);
+
 
