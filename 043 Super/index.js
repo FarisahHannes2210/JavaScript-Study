@@ -111,4 +111,11 @@ console.log(`Programming Dept [
               Salary: $${programmer1.salary.toFixed(2)}
               Programming Language: ${programmer1.programmingLang}]`);
 
+console.log(`Marketing Dept [
+                Employee Id: ${marketing1.employeeId}
+                Name: ${marketing1.name}
+                Employee Type: ${marketing1.employeeType}
+                Salary: $${marketing1.salary.toFixed(2)}
+                Social Media Handled: ${marketing1.socialMedia}]`);
+
 
