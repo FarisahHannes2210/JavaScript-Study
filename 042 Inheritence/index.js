@@ -2,6 +2,10 @@
 //  and methods from an existing class (parent -> child)
 // helps with code reusability
 
+// parent-child method -> some code can be for general, and in child, can be specific to that child.
+// eg.        parent -> vehicle (engine(), fuel(), lights())
+//            child -> bicycle, mototrcycle, car, bus, lorry, plane etc.
+
 
 class Animal{
     alive = true;
