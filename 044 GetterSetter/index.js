@@ -28,7 +28,26 @@ class Rectangle{
             console.error("Height must be a positive number");
         }
     }
+
+    get width(){
+        return `${this._width.toFixed(1)}cm`;
+    }
+
+    get height(){
+        return `${this._height.toFixed(1)}cm`;
+    }
+
+    get area(){
+        return  `${(this._width * this._height).toFixed(1)}cm^2`;
+    }
 }
 
 // we make getter setter so ppl wont be giving data like this lol
-// const rectangle = new Rectangle(-1000000, "pizza");
+const rectangle = new Rectangle(8, 7);
+
+// rectangle.width = -847535;
+// rectangle.height = "pizzaaaa";
+
+console.log(rectangle.width);
+console.log(rectangle.height);
+console.log(rectangle.area);
