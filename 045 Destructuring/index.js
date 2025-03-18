@@ -65,3 +65,30 @@ console.log(age);
 console.log(job);
 
 
+// ---------------- EXAMPLE 5 -----------------
+//  DESTRUCTURING IN FUNCTION PARAMETERS
+
+function displayPerson({ firstName, lastName, age, job = "Unemployed" }) {
+    console.log(`name: ${firstName} ${lastName}`);
+    console.log(`age: ${age} years old`);
+    console.log(`job: ${job}`);
+
+}
+
+const person3 = {
+  firstName: "Sandy",
+  lastName: "Squirrel",
+  age: 45,
+  job: "Scientist",
+};
+
+const person4 = {
+  firstName: "Mr",
+  lastName: "Krab",
+  age: 56,
+  job: "Boss",
+};
+
+// displayPerson(person3);
+displayPerson(person2);
+
