@@ -64,3 +64,16 @@ const person2 = new Person(
   "Fruit Province",
   "HealthyCount."
 );
+
+const person3 = new Person(
+    "John Doe",
+    27,
+    "67 Pompopurin Road",
+    "San Gen 1 County",
+    "United Sanrio Nation"
+  );
+
+
+  console.log(person1.address);
+  console.log(person1.address.city);
+  
