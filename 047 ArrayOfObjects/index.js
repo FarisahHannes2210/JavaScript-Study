@@ -32,3 +32,14 @@ const fruitNames = fruits.map(fruit => fruit.name);
 const fruitColors = fruits.map(fruit => fruit.color);
 console.log(fruitNames);
 console.log(fruitColors);
+
+// ---------------- filter() ----------------
+
+const redFruits = fruits.filter(fruit => fruit.color === "red");
+console.log(redFruits);
+
+const lowCalories = fruits.filter(fruit => fruit.calories < 100);
+console.log(lowCalories);
+
+const highCalories = fruits.filter(fruit => fruit.calories >= 100);
+console.log(highCalories);
