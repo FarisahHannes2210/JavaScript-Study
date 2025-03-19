@@ -43,3 +43,17 @@ console.log(lowCalories);
 
 const highCalories = fruits.filter(fruit => fruit.calories >= 100);
 console.log(highCalories);
+
+// ---------------- reduce() ----------------
+
+const maxFruits =  fruits.reduce((max, fruit) => 
+                                fruit.calories > max.calories ? 
+                                fruit : max);
+
+console.log(maxFruits);
+
+const minFruits =  fruits.reduce((min, fruit) => 
+    fruit.calories < min.calories ? 
+    fruit : min);
+
+console.log(minFruits);
