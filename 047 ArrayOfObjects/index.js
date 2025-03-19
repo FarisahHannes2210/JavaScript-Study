@@ -13,3 +13,22 @@ console.log(fruits[2].name);
 // delete the last row
 // fruits.pop();
 
+// insert new data at the last row
+fruits.push({ name: "grapes", color: "purple", calories: 453 });
+
+// yeet row based on row number inserted
+// fruits.splice(0,2);
+
+console.log(fruits);
+
+
+// ---------------- forEach() ----------------
+fruits.forEach(fruit => console.log(fruit));
+fruits.forEach(fruit => console.log(fruit.name));
+
+// ---------------- map() ----------------
+
+const fruitNames = fruits.map(fruit => fruit.name);
+const fruitColors = fruits.map(fruit => fruit.color);
+console.log(fruitNames);
+console.log(fruitColors);
