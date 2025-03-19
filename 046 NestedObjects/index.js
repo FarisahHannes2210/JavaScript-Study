@@ -33,6 +33,7 @@ for (const property in person.address) {
 
 // ------------------ EXAMPLE 2 ---------------------
 
+//  parent object
 class Person {
   constructor(name, age, ...address) {
     this.name = name;
@@ -41,6 +42,7 @@ class Person {
   }
 }
 
+//  child object
 class Address {
   constructor(street, city, country) {
     this.street = street;
