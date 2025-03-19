@@ -5,19 +5,19 @@
 //      Person{Address{}, ContactInfo{}}
 //      ShoppingCart{Keyboard{}, Mouse{}, Monitor{}}
 
+// ------------------ EXAMPLE 1 ---------------------
 
 const person = {
-    fullName: "Spongebob Sqaurepants",
-    age: 30,
-    isStudent: true,
-    hobbies: ["karate", "jellyfishing", "cooking" ],
-    address: {
-        street: "124 Conch St.",
-        city: "Bikini Bottom",
-        country: "Int. Water"
-
-    }
-}
+  fullName: "Spongebob Sqaurepants",
+  age: 30,
+  isStudent: true,
+  hobbies: ["karate", "jellyfishing", "cooking"],
+  address: {
+    street: "124 Conch St.",
+    city: "Bikini Bottom",
+    country: "Int. Water",
+  },
+};
 
 console.log(`Fullname: ${person.fullName}`);
 console.log(`Age: ${person.age}`);
@@ -27,7 +27,40 @@ console.log(`Current City: ${person.address.city}`);
 
 // WRITE FULL ADDRESS
 
-for(const property in person.address){
-    console.log(person.address[property] + " ");
-    
+for (const property in person.address) {
+  console.log(person.address[property]);
 }
+
+// ------------------ EXAMPLE 2 ---------------------
+
+class Person {
+  constructor(name, age, ...address) {
+    this.name = name;
+    this.age = age;
+    this.address = new Address(...address);
+  }
+}
+
+class Address {
+  constructor(street, city, country) {
+    this.street = street;
+    this.city = city;
+    this.country = country;
+  }
+}
+
+const person1 = new Person(
+  "Louis The First",
+  30,
+  "39 Jardine Road",
+  "Birmingham",
+  "United Kingdom"
+);
+
+const person2 = new Person(
+  "Margaret William",
+  67,
+  "89 Watermelon Street",
+  "Fruit Province",
+  "HealthyCount."
+);
