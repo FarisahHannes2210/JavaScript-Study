@@ -1,6 +1,6 @@
 // sort() = method used to sort elements of an array
 //          sorts elements as strings in lexicographic order,
-//          not alphabetical order (absg6253@-#&)
+//          not alphabetical order (alphabetical order = abcdefghijklmno)
 //          lexicographic = (alphabet + numbers + symbols) as strings
 
 let fruits = ["apple", "orange", "banana", "coconut", "pineapple"];
