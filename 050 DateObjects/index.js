@@ -25,8 +25,49 @@ let year = date.getFullYear();
 let month = date.getMonth();
 let day = date.getDate();
 let hours = date.getHours();
+let minutes = date.getMinutes();
+let seconds = date.getSeconds();
+let dayOfWeek = date.getDay();
+
+switch(dayOfWeek){
+
+    case 1:
+        dayOfWeek = "Monday";
+        // console.log(`Its Monday`);
+        break;
+    case 2:
+        dayOfWeek = "Tuesday";
+        // console.log(`Its Tuesday`);
+        break;
+    case 3:
+        dayOfWeek = "Wednesday";
+        // console.log(`Its Wednesday`);
+        break;
+    case 4:
+        dayOfWeek = "Thursday";
+        // console.log(`Its Thursday`);
+        break;
+    case 5:
+        dayOfWeek = "Friday";
+        // console.log(`Its Friday`);
+        break;
+    case 6:
+        dayOfWeek = "Saturday";
+        // console.log(`Its Saturday`);
+        break;
+    case 0:
+        dayOfWeek = "Sunday";
+        // console.log(`Its Sunday`);
+        break;
+    default:
+        console.log(`Thats not a day`);      
+}
+
 
 console.log("year: " + year);
 console.log("month: " + (month + 1));
 console.log("day: " + day);
 console.log("hours: " + hours);
+console.log("minutes: " + minutes);
+console.log("seconds: " + seconds);
+console.log("day of the week: " + dayOfWeek);
