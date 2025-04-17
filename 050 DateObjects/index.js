@@ -20,3 +20,13 @@ console.log(customDate);
 
 console.log(dateBackThen);
 console.log(trysomething);
+
+let year = date.getFullYear();
+let month = date.getMonth();
+let day = date.getDate();
+let hours = date.getHours();
+
+console.log("year: " + year);
+console.log("month: " + (month + 1));
+console.log("day: " + day);
+console.log("hours: " + hours);
