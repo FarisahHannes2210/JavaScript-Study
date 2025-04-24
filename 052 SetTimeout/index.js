@@ -1,0 +1,1 @@
+//setTimeout() = func in js that allows
